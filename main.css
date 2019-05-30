@@ -1,0 +1,152 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, footer {
+    display: flex;
+}
+
+header h1 {
+    display: inline;
+    padding: 40px;
+    color: #6d9eeb;
+    flex: 1;
+}
+
+header img {
+    width: 200px;
+}
+
+.main {
+    margin-top: -40px;
+    display: flex;
+    /* grid-template-columns: 1fr 1fr; */
+}
+
+.main .text, .image {
+    flex: 1;
+}
+
+.main .text h2 {
+    margin-top: 50px;
+    padding: 40px;
+    font-size: 50px;
+}
+
+.main .text div {
+    margin-left: 35px;
+}
+
+button {
+    width: 200px;
+    border: 1px solid black;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: black;
+    border-radius: 50px;
+    padding: 18px 30px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+}
+
+.image {
+    text-align: center;
+    /* background-color: green; */
+}
+
+.main .image img {
+    width: 300px;
+}
+
+.portal {
+    display: flex;
+    margin-top: 200px;
+}
+
+.portal .text, .image {
+    flex: 1;
+}
+
+.main .text {
+    order: 1;
+}
+
+.main .image {
+    order: 2;
+}
+
+.portal .text h2 {
+    margin-top: 50px;
+    padding: 40px;
+    font-size: 50px;
+}
+
+.portal .image img {
+    width: 500px;
+    border: 15px solid black;
+    border-radius: 8px;
+}
+
+.portal .text div {
+    margin-left: 40px;
+}
+
+footer section {
+    flex: 1;
+    text-align: center;
+}
+
+footer {
+    margin-top: 150px;
+    background: black;
+    color: white;
+    padding: 40px;
+}
+
+footer h3 {
+    font-size: 20px;
+}
+
+footer li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+@media (max-width: 730px) {
+    .main, .portal {
+        flex-direction: column;
+    }
+
+    .main .image img {
+        margin: 50px;
+    }
+
+    .portal {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1142px) {
+    .portal .image img {
+        width: 450px;
+    }
+}
+
+@media (max-width: 900px) {
+    .portal {
+        flex-direction: column;
+    }
+
+    .portal .image img {
+        width: 550px;
+    }
+}

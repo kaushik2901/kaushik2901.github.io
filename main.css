@@ -43,6 +43,12 @@ header img {
     margin-left: 35px;
 }
 
+@media (max-width: 789px) {
+    .main .text div {
+        margin-left: 10px;
+    }   
+}
+
 button {
     width: 175px;
     border: 1px solid black;
